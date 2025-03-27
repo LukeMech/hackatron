@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>LockIn - Candidates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css//navbar.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css//style.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="navbar__menu" id="navbar-menu">
+      <li class="navbar__item">
+        <a href="/demo" class="navbar__link"><i data-feather="home"></i><span>Home</span></a>
+      </li>
+      <li class="navbar__item">
+        <a href="#" class="navbar__link"><i data-feather="users"></i><span>Candidates</span></a>        
+      </li>
+      <li class="navbar__item">
+        <a href="/demo/settings" class="navbar__link"><i data-feather="settings"></i><span>Preferences</span></a>        
+      </li>
+    </ul>
+  </nav>
+  
+
+  <div class="grid-users-container"> 
+    <div class="grid-users-item" id="emp-1">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>Sarah Davis</h2>
+        <p style="background-color: #90EE90; padding: 5px; display: inline-block; border-radius: 5px;"><b>Match 100%</b></p>
+        <button class="more-info-btn" id="emp-1-exp-btn">More</button>
+        <pi><p>Languages: english, spanish<br></p>
+        <p>Education: Harvard University, Bachelor’s Degree in Artificial Intelligence & Machine Learning<br></p>
+        <p>Important skills: public Speaking, creativity<br></p>
+        <p>Key worlds: conference</pi></p>
+        <button class="compare-btn" id="emp-1-cmp-btn">Compare</button>
+      </div>
+    </div>
+    <div class="grid-users-item" id="emp-2">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>Emily Johnson</h2>
+        <p>Match 92%</p>
+        <button class="more-info-btn" id="emp-2-exp-btn">More</button>
+        <pi><p>Languages: english, polish <br></p>
+        <p>Education: Uniwersytet Warszawski, Master’s in managment<br></p>
+        <p>Important skills: leadership, hard work, data analysis<br></p>
+        <p>Key worlds: certificate</pi></p>
+        <button class="compare-btn" id="emp-2-cmp-btn">Compare</button>
+      </div>
+    </div>
+    <div class="grid-users-item" id="emp-3">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>David Martinez</h2>
+        <p>Match 90%</p>
+        <button class="more-info-btn" id="emp-3-exp-btn">More</button>
+        <pi><p>Languages: english, japanese, german<br></p>
+        <p>Education: Massachusetts Institute of Technology, Master's in Computer Science<br></p>
+        <p>Important skills: UX/UI design, adaptability and flexibility<br></p>
+        <p>Key worlds: AI, business</pi></p>
+        <button class="compare-btn" id="emp-3-cmp-btn">Compare</button>
+      </div>
+    </div>
+    <div class="grid-users-item" id="emp-4">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>Robert Wilson</h2>
+        <p>Match 88%</p>
+        <button class="more-info-btn" id="emp-4-exp-btn">More</button>
+        <pi><p>Languages: english<br></p>
+        <p>Education: University of Oxford, PhD in Psychology & Neuroscience<br></p>
+        <p>Important skills: communicativiness<br></p>
+        <p>Key worlds: debates</pi></p>
+        <button class="compare-btn" id="emp-4-cmp-btn">Compare</button>
+      </div>
+    </div>
+    <div class="grid-users-item" id="emp-5">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>Jennifer Taylor</h2>
+        <p>Match 87%</p>
+        <button class="more-info-btn" id="emp-5-exp-btn">More</button>
+        <pi><p>Languages: Russian, Mandarin<br></p>
+         <p>Education: Moscow State University, Bachelor of International Relations<br></p>
+         <p>Important skills: diplomacy, negotiation, public speaking<br></p>
+         <p>Key words: global policy, economic sanctions, cultural exchange</pi></p>
+         <button class="compare-btn" id="emp-5-cmp-btn">Compare</button>
+      </div>
+    </div>
+    <div class="grid-users-item" id="emp-6">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>John Smith</h2>
+        <p>Match 85%</p>
+        <button class="more-info-btn" id="emp-6-exp-btn">More</button>
+        <pi><p>Languages: Spanish, Portuguese<br></p>
+        <p>Education: University of Lisbon, Master’s in Environmental Science<br></p>
+        <p>Important skills: data analysis, field research, GIS mapping<br></p>
+        <p>Key words: climate change, conservation, biodiversity</pi></p>
+        <button class="compare-btn" id="emp-6-cmp-btn">Compare</button>
+      </div>
+    </div>
+    <div class="grid-users-item" id="emp-7">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>Lisa Anderson</h2>
+        <p>Match 82%</p>
+        <button class="more-info-btn" id="emp-7-exp-btn">More</button>
+        <pi><p>Languages: French, Italian, Japanese, German<br></p>
+        <p>Education: focus on Psychology and Literature,  IB Diploma<br></p>
+        <p>Important skills: writing, analysis, storytelling, debate moderation<br></p>
+        <p> Key words: cognitive research, literature analysis, multilingual dialogue</pi></p>
+        <button class="compare-btn" id="emp-7-cmp-btn">Compare</button>
+      </div>
+    </div>
+    <div class="grid-users-item" id="emp-8">
+      <div class="employee-card">
+        <i data-feather="user" class="employee-icon"></i>
+        <h2>Michael Brown</h2>
+        <p>Match 78%</p>
+        <button class="more-info-btn" id="emp-8-exp-btn">More</button>
+        <pi><p>Languages:  German, Dutch<br></p>
+         <p>Education: University of Amsterdam,  Bachelor of Modern Art<br></p>
+         <p>Important skills: painting, management<br></p>
+        <p>Key worlds: conferences, art exhibition</pi></p>
+        <button class="compare-btn" id="emp-8-cmp-btn">Compare</button>
+      </div>
+    </div>
+
+  </div>
+  <script src='https://unpkg.com/feather-icons'></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
