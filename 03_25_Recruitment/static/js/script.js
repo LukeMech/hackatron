@@ -85,8 +85,8 @@ cmpFunction = (cmpbtn) => {
 
         navbarCompareBtnInDoc = document.getElementById("compare-all-btn");
         navbarCompareBtnInDoc.addEventListener("click", () => {
-            const id1 = compare[0].id.split('-')[1];
-            const id2 = compare[1].id.split('-')[1];
+            let id1 = compare[0].id.split('-')[1];
+            let id2 = compare[1].id.split('-')[1];
             if (id1 > id2) {
                 [id1, id2] = [id2, id1];
             }
